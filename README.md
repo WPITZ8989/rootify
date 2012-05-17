@@ -10,7 +10,7 @@ Usage: ./rootify [options | program]
 Options: -h, --help : Print this help text.
 If program is specified then it will be executed with root privileges.
 If no program is specified then a root shell will be opened.
-rootify 0.2.3 is released under the GPLv3, hosted at http://code.google.com/p/rootify/
+rootify 0.2.3 is released under the GPLv3, hosted at https://github.com/mondalaci/rootify
 ```
 
 But you have to install it first. You can directly copy either the rootify.i386 or the rootify.amd64 binary to your path or build it by typing "make".
