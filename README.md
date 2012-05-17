@@ -13,9 +13,9 @@ If no program is specified then a root shell will be opened.
 rootify 0.2.3 is released under the GPLv3, hosted at https://github.com/mondalaci/rootify
 ```
 
-But you have to install it first. You can directly copy either the rootify.i386 or the rootify.amd64 binary to your path or build it by typing "make".
+But you have to install it first.  First build it by typing `make`, then copy the compiled binary to your path and finally SUID-root the executable by typing `chmod +s rootify`.
 
-After that do something like this as root:
+After that add the privileged users as root like this:
 
 ```
 # echo joe >> /etc/rootify.conf
