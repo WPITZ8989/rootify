@@ -23,7 +23,8 @@ After that do something like this as root:
 
 From this point forward it's easy for Joe to become root:
 
-```joe$ rootify
+```
+joe$ rootify
 #
 ```
 
