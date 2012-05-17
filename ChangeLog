@@ -1,0 +1,75 @@
+2010-01-05  Laszlo Monda  <laci@monda.hu>
+
+    * Rename the project name from power to rootify.
+
+    * Clean up the help text.
+
+2007-03-16  Laszlo Monda  <laci@monda.hu>
+
+    * Release version 0.2.2
+
+    * README.hu: Likewise.
+
+    * README: Likewise.
+
+    * ChangeLog: Update my email address.
+
+    * INSTALL: Likewise.
+
+    * AUTHORS: Update my home page address.
+
+    * power.c (main): Use execvp() instead of system() to exec the
+    given process.  This method correctly handles quoted shell
+    strings.
+
+2005-11-18  Laszlo Monda  <laci@monda.hu>
+
+    * Release version 0.2.1
+
+    * Makefile (install): Set SGID mode flag on power.
+
+    * power.c (main): Add setgid() call.
+
+2005-06-25  Laszlo Monda  <laci@monda.hu>
+
+    * Release version 0.2
+
+    * power.c (die): Print error messages correctly.
+
+    * Makefile: Force copy on installation, because it's more useful
+    when installing new versions.
+    Add clean directive.
+
+    * INSTALL: Redirect visitors to README.
+
+    * README.hu: Add file.
+
+    * README: Incorporate install section.
+
+    * Makefile: Implement install directive.
+
+2005-06-22  Laszlo Monda  <laci@monda.hu>
+
+    * INSTALL: Give straightforward installation instructions.
+
+    * AUTHORS: Add file.
+
+    * power.c: Remove varargs.h inclusion.  It's deprecated.
+    (main): Don't fork before exec, because it's unnecessary.
+    (print_help): Print useful help message.
+
+    * Makefile (power): Invoke GCC with -w when compiling.
+
+2004-10-24  Laszlo Monda  <laci@monda.hu>
+
+    * Release version 0.1
+
+        * power.c (main): Correct condition that causes infinite loop when
+        the process owner's name is not present in the configuration file.
+        (main): Give authorization for root always.
+
+2004-04-09  Laszlo Monda  <laci@monda.hu>
+
+    * power.c (USER_NAME_MAX): ChangeLog started. Everything seems to
+    work smoothly for now.
+
